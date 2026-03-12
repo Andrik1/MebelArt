@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MebelArt — Дизайн та виготовлення меблів у Харкові</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts з fallback на системні -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" /></noscript>
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-line"></div>
+      <span class="loader-text">MebelArt</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <span class="logo-mark">M</span>
+        <span class="logo-text">ebelArt</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#about" class="nav-link" data-text="Про нас">Про нас</a>
+        <a href="#services" class="nav-link" data-text="Послуги">Послуги</a>
+        <a href="#projects" class="nav-link" data-text="Проєкти">Проєкти</a>
+        <a href="#contact" class="nav-link" data-text="Контакти">Контакти</a>
+      </nav>
+      <a href="tel:0991625711" class="header-cta">
+        <span>Зателефонувати</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-nav">
+      <a href="#about" class="mobile-nav-link">Про нас</a>
+      <a href="#services" class="mobile-nav-link">Послуги</a>
+      <a href="#projects" class="mobile-nav-link">Проєкти</a>
+      <a href="#contact" class="mobile-nav-link">Контакти</a>
+    </nav>
+    <a href="tel:0991625711" class="mobile-phone">099-162-57-11</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grain"></div>
+      <div class="hero-shape hero-shape--1"></div>
+      <div class="hero-shape hero-shape--2"></div>
+      <div class="hero-shape hero-shape--3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Харків · Меблевий дизайн
+      </div>
+      <h1 class="hero-title reveal">
+        <span class="line">Меблі,</span>
+        <span class="line line--italic">що говорять</span>
+        <span class="line">про вас</span>
+      </h1>
+      <p class="hero-desc reveal">
+        Проєктування, моделювання 3D-дизайну, виготовлення та монтаж меблів під замовлення у Харкові
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn--primary">Переглянути роботи</a>
+        <a href="#contact" class="btn btn--ghost">Обговорити проєкт</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+    <!-- Stats -->
+    <div class="hero-stats reveal">
+      <div class="stat">
+        <span class="stat-num" data-target="120">0</span>
+        <span class="stat-label">Реалізованих<br>проєктів</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-target="5">0</span>
+        <span class="stat-label">Років<br>досвіду</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-target="100">0</span>
+        <span class="stat-label">% задоволених<br>клієнтів</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-img-wrap reveal-left">
+            <img src="photo_2026-03-09_19-56-07.jpg" alt="Коридор з меблями" class="about-img" />
+            <div class="about-img-accent"></div>
+          </div>
+          <div class="about-badge-float reveal-left">
+            <span class="float-icon">✦</span>
+            <span>Розробка 3D-моделей</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="section-label reveal">— Хто ми</p>
+          <h2 class="section-title reveal">
+            Перетворюємо<br><em>ідеї</em> на меблі
+          </h2>
+          <p class="about-p reveal">
+            Ми — команда дизайнерів та майстрів із Харкова. Беремо проєкт від ескізу до фінального монтажу. Кожен виріб — індивідуальний, продуманий і підігнаний під ваш простір.
+          </p>
+          <p class="about-p reveal">
+            Використовуємо сучасне програмне забезпечення для 3D-моделювання, щоб ви могли побачити результат до початку виготовлення.
+          </p>
+          <ul class="about-list reveal">
+            <li><span class="list-mark">✦</span> 3D-моделювання та візуалізація</li>
+            <li><span class="list-mark">✦</span> Підбір матеріалів та прорахунок вартості</li>
+            <li><span class="list-mark">✦</span> Виготовлення на замовлення</li>
+            <li><span class="list-mark">✦</span> Доставка та монтаж у Харкові</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services section" id="services">
+    <div class="container">
+      <p class="section-label reveal">— Що ми робимо</p>
+      <h2 class="section-title reveal">Наші <em>послуги</em></h2>
+      <div class="services-grid">
+        <div class="service-card reveal" data-delay="0">
+          <div class="service-icon">⬡</div>
+          <h3>3D-Моделювання</h3>
+          <p>Розробляємо точні 3D-моделі меблів перед виготовленням. Ви побачите кінцевий результат заздалегідь.</p>
+        </div>
+        <div class="service-card reveal" data-delay="100">
+          <div class="service-icon">◈</div>
+          <h3>Дизайн і прорахунок</h3>
+          <p>Розробляємо дизайн-проєкт з деталізованим кошторисом. Без прихованих витрат.</p>
+        </div>
+        <div class="service-card reveal" data-delay="200">
+          <div class="service-icon">⬟</div>
+          <h3>Виготовлення</h3>
+          <p>Виготовляємо кухні, шафи-купе, передпокої, офісні меблі та будь-які вироби під замовлення.</p>
+        </div>
+        <div class="service-card reveal" data-delay="300">
+          <div class="service-icon">◉</div>
+          <h3>Збірка і монтаж</h3>
+          <p>Доставляємо та встановлюємо меблі «під ключ». Дбайливо, точно, без слідів у приміщенні.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <p class="section-label reveal">— Портфоліо</p>
+      <h2 class="section-title reveal">Наші <em>проєкти</em></h2>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal" data-delay="0">
+          <div class="project-img-wrap">
+            <img src="photo_2026-03-09_19-53-23.jpg" alt="Синя кухня з мармуровим фартухом" loading="lazy" />
+            <div class="project-overlay">
+              <span class="project-year">2023</span>
+              <h3 class="project-name">Кухня «Синій Сапфір»</h3>
+              <p class="project-desc">Кутова кухня з глянцевими фасадами та мармуровим фартухом. Харків.</p>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-tag">Кухня</span>
+            <span class="project-tag">Корпусні меблі</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal" data-delay="100">
+          <div class="project-img-wrap">
+            <img src="photo_2026-03-12_21-32-14.jpg" alt="3D-модель шафи" loading="lazy" />
+            <div class="project-overlay">
+              <span class="project-year">2025</span>
+              <h3 class="project-name">3D-Модель шафи</h3>
+              <p class="project-desc">Двосекційна шафа з відкритими полицями та ящиками. Розробка до виготовлення.</p>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-tag">3D-Моделювання</span>
+            <span class="project-tag">Шафа</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal" data-delay="200">
+          <div class="project-img-wrap">
+            <img src="photo_2026-03-09_19-53-50.jpg" alt="Бежева кухня" loading="lazy" />
+            <div class="project-overlay">
+              <span class="project-year">2025</span>
+              <h3 class="project-name">Кухня «Latte»</h3>
+              <p class="project-desc">Мінімалістична кухня у теплих тонах із кварцовою стільницею.</p>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-tag">Кухня</span>
+            <span class="project-tag">Мінімалізм</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal" data-delay="300">
+          <div class="project-img-wrap">
+            <img src="photo_2026-03-09_19-53-47.jpg" alt="Передпокій з підсвічуванням" loading="lazy" />
+            <div class="project-overlay">
+              <span class="project-year">2025</span>
+              <h3 class="project-name">Передпокій «Loft Oak»</h3>
+              <p class="project-desc">Вбудована шафа з LED-підсвічуванням і комбінованими фасадами.</p>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-tag">Передпокій</span>
+            <span class="project-tag">LED-підсвічування</span>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card reveal" data-delay="0">
+          <div class="project-img-wrap">
+            <img src="photo_2026-03-09_19-53-36.jpg" alt="Комп'ютерне робоче місце" loading="lazy" />
+            <div class="project-overlay">
+              <span class="project-year">2025</span>
+              <h3 class="project-name">Робоче місце «Home Office»</h3>
+              <p class="project-desc">Стіл із шафою-пеналом у темно-коричневому декорі під дерево.</p>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-tag">Офіс</span>
+            <span class="project-tag">Стіл</span>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card reveal" data-delay="100">
+          <div class="project-img-wrap">
+            <img src="photo_2026-03-09_19-56-06.jpg" alt="Кухня біла" loading="lazy" />
+            <div class="project-overlay">
+              <span class="project-year">2024</span>
+              <h3 class="project-name">Кухня «White Marble»</h3>
+              <p class="project-desc">Лінійна кухня з білими верхніми фасадами та кварцовою стільницею.</p>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-tag">Кухня</span>
+            <span class="project-tag">Білий дизайн</span>
+          </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="project-card reveal" data-delay="200">
+          <div class="project-img-wrap">
+            <img src="photo_2026-03-09_20-15-42.jpg" alt="Кухня персикова" loading="lazy" />
+            <div class="project-overlay">
+              <span class="project-year">2023</span>
+              <h3 class="project-name">Кухня «Персик»</h3>
+              <p class="project-desc">Кутова кухня у персиковому кольорі з мармуровим фартухом та темною стільницею.</p>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-tag">Кухня</span>
+            <span class="project-tag">Персиковий</span>
+          </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="project-card reveal" data-delay="300">
+          <div class="project-img-wrap">
+            <img src="photo_2026-03-09_20-15-40.jpg" alt="Кухня капучіно" loading="lazy" />
+            <div class="project-overlay">
+              <span class="project-year">2023</span>
+              <h3 class="project-name">Кухня «Cappuccino»</h3>
+              <p class="project-desc">Кутова кухня у теплому бежево-капучіновому кольорі з мармуровим фартухом.</p>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-tag">Кухня</span>
+            <span class="project-tag">Беж / Капучіно</span>
+          </div>
+        </div>
+
+        <!-- Project 9 -->
+        <div class="project-card reveal" data-delay="0">
+          <div class="project-img-wrap">
+            <img src="photo_2026-03-09_20-15-37.jpg" alt="Кухня венге" loading="lazy" />
+            <div class="project-overlay">
+              <span class="project-year">2023</span>
+              <h3 class="project-name">Кухня «Wenge»</h3>
+              <p class="project-desc">Кутова кухня з фасадами під темне дерево венге та золотистою фурнітурою.</p>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-tag">Кухня</span>
+            <span class="project-tag">Венге / Дерево</span>
+          </div>
+        </div>
+
+        <!-- Placeholder -->
+        <div class="project-card project-card--placeholder reveal" data-delay="100">
+          <div class="project-placeholder-inner">
+            <div class="placeholder-icon">+</div>
+            <p>Тут з'явиться ваш проєкт</p>
+            <span>Місце для майбутньої роботи</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process section" id="process">
+    <div class="container">
+      <p class="section-label reveal">— Як ми працюємо</p>
+      <h2 class="section-title reveal">Від ідеї до <em>результату</em></h2>
+      <div class="process-steps">
+        <div class="step reveal" data-delay="0">
+          <div class="step-num">01</div>
+          <h3 class="step-title">Консультація</h3>
+          <p class="step-desc">Обговорюємо ваші ідеї, побажання, бюджет та розміри приміщення. Безкоштовно.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step reveal" data-delay="150">
+          <div class="step-num">02</div>
+          <h3 class="step-title">3D-Проєкт</h3>
+          <p class="step-desc">Розробляємо детальну 3D-модель та узгоджуємо з вами кожен елемент.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step reveal" data-delay="300">
+          <div class="step-num">03</div>
+          <h3 class="step-title">Виготовлення</h3>
+          <p class="step-desc">Виготовляємо меблі з якісних матеріалів точно за затвердженим проєктом.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step reveal" data-delay="450">
+          <div class="step-num">04</div>
+          <h3 class="step-title">Монтаж</h3>
+          <p class="step-desc">Доставляємо та встановлюємо меблі у вашому приміщенні в обговорений термін.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-text">
+          <p class="section-label reveal">— Зв'яжіться з нами</p>
+          <h2 class="section-title reveal">Давайте<br>поговоримо про <em>ваш</em><br>проєкт</h2>
+          <div class="contact-details reveal">
+            <div class="contact-item">
+              <span class="contact-icon">✆</span>
+              <div>
+                <span class="contact-label">Телефон</span>
+                <a href="tel:0991625711" class="contact-value">099-162-57-11</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">⌖</span>
+              <div>
+                <span class="contact-label">Місто</span>
+                <span class="contact-value">Харків, Україна</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">◷</span>
+              <div>
+                <span class="contact-label">Графік роботи</span>
+                <span class="contact-value">Пн–Сб: 9:00–19:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Ваше ім'я</label>
+              <input type="text" id="name" name="name" placeholder="Іванна" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Номер телефону</label>
+              <input type="tel" id="phone" name="phone" placeholder="0XX XXX XX XX" required />
+            </div>
+            <div class="form-group">
+              <label for="type">Тип меблів</label>
+              <select id="type" name="type">
+                <option value="">Оберіть тип</option>
+                <option>Кухня</option>
+                <option>Шафа / Гардероб</option>
+                <option>Передпокій</option>
+                <option>Робоче місце</option>
+                <option>Інше</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Повідомлення</label>
+              <textarea id="message" name="message" rows="4" placeholder="Опишіть ваш проєкт..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              <span class="btn-text">Надіслати заявку</span>
+              <span class="btn-loader" id="btnLoader" style="display:none">...</span>
+            </button>
+            <p class="form-success" id="formSuccess">✓ Дякуємо! Ми зв'яжемося з вами найближчим часом.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-mark">M</span>
+            <span class="logo-text">ebelArt</span>
+          </a>
+          <p>Дизайн та виготовлення меблів<br>під замовлення у Харкові</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">Про нас</a>
+          <a href="#services">Послуги</a>
+          <a href="#projects">Проєкти</a>
+          <a href="#contact">Контакти</a>
+        </div>
+        <div class="footer-contact">
+          <a href="tel:0991625711" class="footer-phone">099-162-57-11</a>
+          <span>Харків, Україна</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 MebelArt. Всі права захищені.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Перегляд фото">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Закрити">✕</button>
+      <button class="modal-arrow modal-arrow--prev" id="modalPrev" aria-label="Попереднє">‹</button>
+      <button class="modal-arrow modal-arrow--next" id="modalNext" aria-label="Наступне">›</button>
+      <div class="modal-img-wrap">
+        <img src="" alt="" id="modalImg" />
+        <div class="modal-spinner" id="modalSpinner"></div>
+      </div>
+      <div class="modal-caption" id="modalCaption"></div>
+      <div class="modal-counter" id="modalCounter"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
